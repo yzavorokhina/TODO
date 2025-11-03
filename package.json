@@ -12,7 +12,8 @@
     "dev": "npx webpack --watch"
   },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
