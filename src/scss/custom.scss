@@ -1,0 +1,68 @@
+@import 'normalize';
+
+html, body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: #57C785;
+    background: linear-gradient(90deg,rgba(87, 199, 133, 1) 0%, rgb(196, 237, 83) 99%);
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+.todo-list{
+    width: 500px;
+    border: 3px solid rgb(61, 194, 105);
+    padding: 20px;
+}
+
+.tasks li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+h2{
+    color:rgb(29, 88, 49);
+}
+
+li{
+    color:rgb(29, 88, 49);
+}
+
+input{
+    width: 325px;
+    background: #57C785;
+    border: 3px solid rgb(61, 194, 105);
+    color:rgb(29, 88, 49);
+    border-radius: 5px;
+}
+
+.task-tools button{
+    background: #57C785;
+    border: 3px solid rgb(61, 194, 105);
+    color:rgb(29, 88, 49);
+    border-radius: 5px;
+}
+
+.in-progress button{
+    background: #57C785;
+    border: 3px solid rgb(61, 194, 105);
+    color:rgb(29, 88, 49);
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.done button{
+    background: #57C785;
+    border: 3px solid rgb(61, 194, 105);
+    color:rgb(29, 88, 49);
+    border-radius: 5px;
+}
