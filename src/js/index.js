@@ -1,30 +1,4 @@
 
-// class Product{
-//     constructor(id, name){
-//         this.id = id;
-//         this.name = name;
-//     }
-// }
-
-// // let cart = [];
-
-// /* получили строку в формате JSON и из него восстановили массив объектов */
-// let storageCart = JSON.parse(window.localStorage.getItem('cart'));
-// let cart = storageCart ? storageCart : [];
-
-// console.log(storageCart);
-
-// const bread = new Product(1, 'Хлеб');
-// const tea = new Product(2, 'Чёрный чай');
-
-// // cart[0] = bread;
-// // cart[1] = tea;
-// cart.push(bread);
-// cart.push(tea);
-// console.log(cart);
-
-// let jsonCart = JSON.stringify(cart);
-// window.localStorage.setItem('cart', jsonCart);
 import $ from 'jquery';
 import { v4 as uuidv4 } from 'uuid';
 // console.log(uuidv4());
@@ -50,7 +24,7 @@ function renderList(){
 
 function addTaskToList(task){
     const list = $(".tasks");
-    const li = $(`<li class="${task.status}">${task.name}</li>`);
+    const li = $(`<li class="${task.status}"><div style='width: 340px'>${task.name}</div></li>`);
     const doneButton = $('<button>Выполнить</button>');
     doneButton.click(() => {
         // console.log(task);
@@ -85,23 +59,6 @@ function addTaskToList(task){
     // const button = $('button');
     // console.log(list);
 }
-
-// let i ='3424';
-// for (let i = 0; i < 10; i++){
-// }
-// console.log(i);
-
-// if(1>0){
-//     let i = '2';
-// }
-// console.log(i);
-
-// console.log(list);
-// $(document).ready(function(){
-//     tasks.forEach(function(item){
-//         addTaskToList(item);
-//     });
-// });
 
 $("#add-task").click(function(){
     let text = $("#task").val();
