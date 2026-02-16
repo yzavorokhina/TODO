@@ -1,0 +1,105 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/custom.scss ***!
+  \***************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(87, 199, 133) 0%, rgb(196, 237, 83) 99%);
+}
+
+.todo-list {
+  width: 600px;
+  height: 800px;
+  border: 2px solid white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: rgb(29, 88, 49);
+  margin-bottom: 30px;
+}
+
+/* add new task: */
+input {
+  height: 30px;
+  width: 270px;
+  background: white;
+  border: 2px solid white;
+  color: rgb(29, 88, 49);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.task-tools button {
+  width: 130px;
+  height: 30px;
+  background: rgb(29, 88, 49);
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+/* tasks: */
+.tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 520px;
+  margin-bottom: 5px;
+  color: rgb(29, 88, 49);
+  font-size: 16px;
+  white-space: pre-line;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.in-progress button {
+  min-width: 90px;
+  height: 26px;
+  border: 1px solid white;
+  background: rgb(106, 199, 87);
+  color: rgb(29, 88, 49);
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+.done button {
+  min-width: 90px;
+  height: 26px;
+  border: 1px solid rgb(29, 88, 49);
+  margin-left: 6px;
+  background: rgb(133, 184, 140);
+  color: rgb(29, 88, 49);
+  border-radius: 5px;
+  text-decoration: line-through;
+}
