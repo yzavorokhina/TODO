@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
     filename: '[name].[fullhash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -33,6 +35,11 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[fullhash].css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/index.html', to: 'index.html' }
+      ]
     })
   ],
 };

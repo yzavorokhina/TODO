@@ -3,20 +3,26 @@
   "version": "1.0.0",
   "description": "todo_application",
   "keywords": [
-    "todo", "todo_app", "todo_application"
+    "todo",
+    "todo_app",
+    "todo_application"
   ],
   "license": "ISC",
   "author": "Yuliya Zavorokhina",
   "scripts": {
     "build": "npx webpack build",
-    "dev": "npx webpack --watch"
+    "dev": "npx webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "jquery": "^3.7.1",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.4",
     "mini-css-extract-plugin": "^2.9.4",
     "sass": "^1.93.2",
